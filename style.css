@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9b59b6;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 900px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about__calendar, .wrapper {
+    flex: 1;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.description{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    background-color: #fff;
+    width: 450px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .current__date {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header .icons i {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.days { 
+    display: flex;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 10px;
+}
+
+.dates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.day, .date {
+    width: 14.28%;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.date:hover {
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.prev__month, .next__month {
+    color: #bfbfbf;
+}
+
+.date__today{
+    color: #a414de;
+    border: 1px solid #a414de;
+    border-radius: 5px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.icons i:hover{
+    border-radius: 7px;
+    background-color: #a414de;
+    color: #f0f0f0;
+}

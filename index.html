@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="about__calendar">
+            <h2 class="title">Interactive Calendar</h2>
+            <p class="description">This calendar was created using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="wrapper">
+            <header>
+                <p id="month__year" class="current__date"></p>
+                <div class="icons">
+                    <i id="prev" class="ri-arrow-left-s-line"></i>
+                    <i id="next" class="ri-arrow-right-s-line"></i>
+                </div>
+            </header>
+            <div class="calendar">
+                <div class="days">
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tue</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thu</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                </div>
+                <div id="dates" class="dates">
+                    <!-- Generate dates dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
